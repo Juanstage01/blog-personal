@@ -1,0 +1,47 @@
+:root {
+    --colorFondo: #204565;
+    --colorheader: #2196f3;
+    --colorDisabled: #9e9e9e;
+    --colorAddVerde: #4CAF50;
+    --colorHoverAdd: #14f21b;
+    --colorBlack: rgb(0, 0, 0);
+    --colorWhite: #fff;
+    --colorAzul: #1a73e8;
+    --colorPay: #f5ff3b;
+    --colorPildorasTable: #ffff80, #FF9900;
+}
+
+body {
+    margin: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 4em;
+    text-align:center;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 8px;
+    /* margin:0px; */
+}
+
+p {
+    font-size: 2em;
+}
+.container_main{
+    background-color: rgb(213, 221, 228 , 47%);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border: 1px solid #BFBFBF;
+    padding:20px;
+    
+}
+.container_header{
+    background-color: var(--colorAzul);
+}
+.container_article article img{
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    width:400px;
+    float:left;
+    margin-right: 20px;
+}

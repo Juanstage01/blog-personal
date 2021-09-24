@@ -1,0 +1,77 @@
+:root {
+    --colorFondo: #204565;
+    --colorheader: #2196f3;
+    --colorDisabled: #9e9e9e;
+    --colorAddVerde: #4CAF50;
+    --colorHoverAdd: #14f21b;
+    --colorBlack: rgb(0, 0, 0);
+    --colorWhite: #fff;
+    --colorAzul: #1a73e8;
+    --colorPay: #f5ff3b;
+    --colorPildorasTable: #ffff80, #FF9900;
+}
+
+body {
+    background: var(--colorWhite);
+}
+
+h2 {
+    text-align: center;
+    font-size:2em;
+    font-family: Gluten;
+
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    background-color: var(--colorAzul);
+    /* border:solid 2px var(--colorBlack); */
+    box-shadow: 10px 10px 8px #888888;
+    padding: 30px;
+    border-radius: 8px;
+
+}
+table tr td p{
+    font-size:1.5em;
+    color:var(--colorBlack);
+}
+
+td {
+    padding: 5px 0;
+}
+#size_file{
+    font-family: Gluten;
+}
+/* -----------------------------------------------------------------------------------------------------------------------------------button */
+#campo_titulo {
+    font-size: 1.2em;
+    width: 15.5em;
+}
+
+textarea #area_comentarios,textarea #area_Descripcion {
+    font-size: 1.8em;
+    width: 45em;
+}
+
+#imagen,
+#btn_enviar {
+    background-color: var(--colorWhite);
+    color: black;
+    border: 2px solid var(--colorHoverAdd);
+    /* blue */
+    border-radius: 8px;
+    transition-duration: 0.2s;
+}
+
+#imagen:hover,
+#btn_enviar:hover {
+    background-color: var(--colorHoverAdd);
+    /* green */
+    color: var(--colorWhite);
+}
+
+input[type="file"i],
+input[type="submit"i] {
+    font-size: 1.5em;
+}
