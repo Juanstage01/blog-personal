@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
     <?php 
@@ -27,9 +27,9 @@
             foreach($tabla_blog as $valor){
                 echo "<br><br><div class='container_article'>";
                 echo "<div class='container_link'><h4>" . $valor->getFecha() . "</h4>";
-                echo "<div class='comment' style='width:900px'><h3>" . $valor->getTitulo() . "</h3><p><span id='" . $n . "'>";
+                echo "<div class='comment' style='width:400px'><h3>" . $valor->getTitulo() . "</h3><p><span id='" . $n . "'>";
                 echo "Detalles...</span><span id='" . $m . "'>";
-                echo $valor->getComentario() . "</span></p><button onclick='myFunction" . $b ."()' id='" . $k . "'>Read more</button></div>";
+                echo $valor->getComentario() . "</span></p><button onclick='myFunction" . $b ."()' id='" . $k . "'>Leer mas</button></div>";
                 $b++;
                 $n++;
                 $m++;
@@ -60,6 +60,6 @@
         </nav>
         <p id="footer_p">c 2021 El blog de Dan, Todos los derechos reservados.hay 5437 disponibles</p>
     </footer> 
-    <script src="script.js"> </script>
+    <script src="script2.js"> </script>
 </body>
 </html>

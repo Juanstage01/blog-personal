@@ -1,0 +1,134 @@
+:root {
+    --colorFondo: #204565;
+    --colorheader: #2196f3;
+    --colorDisabled: #9e9e9e;
+    --colorAddVerde: #4CAF50;
+    --colorHoverAdd: #14f21b;
+    --colorBlack: rgb(0, 0, 0);
+    --colorWhite: #fff;
+    --colorAzul: #1a73e8;
+    --colorPay: #f5ff3b;
+    --colorPildorasTable: #ffff80, #FF9900;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link,
+a:visited {
+    color: none;
+    text-decoration: none;
+}
+
+.container_header {
+    margin: 0px;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.7em;
+    margin: 0px;
+    padding: 15px;
+    background: var(--colorAzul);
+    font-family: Gluten;
+
+}
+
+h3,
+h4,
+.image {
+    margin-left: 30px;
+    color:var(--colorBlack);
+}
+
+h3 {
+    margin: 20px;
+    font-size: 3em;
+    margin-left: 0px;
+}
+
+.image img {
+    border-radius: 8px;
+}
+.container_article{
+    width:90%;
+    background-color:rgb(213, 221, 228 , 47%);
+}
+.container_link {
+    border: 1px solid #BFBFBF;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.comment {
+    float: right;
+    /* width: 900px; */
+    margin-right: 35em;
+    color:black;
+}
+.comment p{
+    font-size: xx-large;
+}
+footer{
+    background:var(--colorWhite);
+    height:200px;
+    padding-top: 80px;
+}
+.footer{
+    background:var(--colorWhite);
+    width:60%;
+    height:70px;
+    clear:both;
+    margin-left:640px;
+}
+.footer_nav a{
+    text-decoration: underline;
+    color:var(--colorBlack);
+    margin-left: inherit;
+}
+.footer_nav li{
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+
+}
+#footer_p{
+    font:30px;
+    color:var(--colorBlack);
+    /* text-align: center; */
+    /* margin-right: -200px; */
+    margin-left:700px;
+    
+}
+body::-webkit-scrollbar{
+    background:var(--colorAzul);
+}
+body::-webkit-scrollbar-thumb{
+    background:var(--colorheader);
+    border-radius:10px;
+}
+span[id="200"],span[id="201"],span[id="202"],span[id="203"],span[id="204"],span[id="205"]{
+    display: none;
+}
+button {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 8px 18px;
+}
+button[id="300"],button[id="301"],button[id="302"],button[id="303"],button[id="304"],button[id="305"] {
+    border: none;
+    background-color: var(--colorAddVerde);
+    color: var(--colorWhite);
+    border: 2px solid var(--colorAddVerde);
+    /* Green */
+    transition-duration: 0.4s;
+}
+
+button[id="300"]:hover,button[id="301"]:hover,button[id="302"]:hover,button[id="303"]:hover,button[id="304"]:hover,button[id="305"]:hover {
+    background-color: var(--colorHoverAdd);
+    /* Green */
+    color: var(--colorWhite);
+}
