@@ -42,15 +42,15 @@ $Manejo_Objetos=new Manejo_Objetos($miconexion);
 $blog=new Objeto_Blog();
 $blog->setTitulo(htmlentities(addslashes($_POST["campo_titulo"]), ENT_QUOTES));
 $blog->setFecha(Date("Y-m-d H:i:s"));
-$blog->setDescripcion(htmlentities(addslashes($_POST["area_descripcion"]), ENT_QUOTES));
+// $blog->setDescripcion(htmlentities(addslashes($_POST["area_descripcion"]), ENT_QUOTES));
 $blog->setComentario(htmlentities(addslashes($_POST["area_comentarios"]), ENT_QUOTES));
 $blog->setImagen($_FILES["imagen"]["name"]);
 $Manejo_Objetos->insertaContenido($blog);
 echo "<br/> Entrada de blog con exito <br/>";
 
 }catch(Exception $e){
-    die("Error: " . $e->getMessage());
-}
+    die("\n Error: " . $e->getMessage());
+} 
    
 ?>
 </body>
