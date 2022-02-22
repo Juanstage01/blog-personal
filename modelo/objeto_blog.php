@@ -3,7 +3,6 @@ class Objeto_Blog{
     private  $id;
     private  $Titulo;
     private  $Fecha;
-    private  $Descripcion;
     private  $Comentario;
     private  $Imagen;
     
@@ -29,12 +28,6 @@ class Objeto_Blog{
         $this->Fecha=$Fecha;
     }
 
-    public function getDescripcion(){
-        return $this->id;
-    }
-    public function setDescripcion($Descripcion){
-        $this->Descripcion=$Descripcion;
-    }
 
     public function getComentario(){
         return $this->Comentario;

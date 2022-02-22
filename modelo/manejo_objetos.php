@@ -14,10 +14,10 @@ class Manejo_Objetos{
         $resultado=$this->conexion->query("SELECT * FROM bbddblog ORDER BY FECHA");
         while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
             $blog=new Objeto_Blog();
-            $blog->setId($registro["id"]);
+            // $blog->setId($registro["id"]);
             $blog->setTitulo($registro["Titulo"]);
             $blog->setFecha($registro["Fecha"]);
-            $blog->setDescripcion($registro["Descripcion"]);
+            // $blog->setDescripcion($registro["Descripcion"]);
             $blog->setComentario($registro["Comentario"]);
             $blog->setImagen($registro["Imagen"]);
             $matriz[$contador]=$blog;
@@ -26,7 +26,7 @@ class Manejo_Objetos{
         return $matriz;
     }
     public function insertaContenido(Objeto_Blog $blog){
-        $sql="INSERT INTO bbddblog (Titulo,Fecha,Descripcion,Comentario,Imagen) VALUES ('" . $blog->getTitulo() . "','" . $blog->getFecha() . "','" . $blog->getDescripcion() . "','" . $blog->getComentario() . "','" . $blog->getImagen() . "')"; 
+        $sql="INSERT INTO bbddblog (Titulo,Fecha,Comentario,Imagen) VALUES ('" . $blog->getTitulo() . "','" . $blog->getFecha() . "','" . $blog->getComentario() . "','" . $blog->getImagen() . "')"; 
         $this->conexion->exec($sql);
     }
 }
